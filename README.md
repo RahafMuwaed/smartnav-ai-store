@@ -19,9 +19,6 @@ Map renders: Glowing route from Entrance to Shelf A3
 ```
 ## 📸 Screenshots
 
-| Bluetooth Speaker | Power Bank |
-|:-----------------:|:----------:|
-| ![](bluetooth%20speaker%20searc....png) | ![](power%20bank%20navigation....png) |
 
 | Scientific Calculator | Smartwatch Tracker |
 |:--------------------:|:-----------------:|
