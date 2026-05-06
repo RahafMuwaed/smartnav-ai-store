@@ -1,0 +1,2063 @@
+{
+  "metadata": {
+    "map_id": "smart-hyper-floor-a",
+    "name": "Smart Hyper Store — Floor Plan A",
+    "version": "2.0",
+    "coordinate_system": {
+      "origin": "top-left",
+      "x_range": [
+        0,
+        100
+      ],
+      "y_range": [
+        0,
+        100
+      ],
+      "svg_viewbox": "0 0 680 460",
+      "scale_x": 6.8,
+      "scale_y": 4.6,
+      "note": "multiply x*6.8 and y*4.6 to get SVG px"
+    },
+    "counts": {
+      "shelves": 16,
+      "service_areas": 4,
+      "path_nodes": 55,
+      "edges": 112,
+      "aisles": 4,
+      "corridors": 10
+    },
+    "suitable_for": [
+      "indoor-navigation",
+      "A*-pathfinding",
+      "Dijkstra",
+      "React-SVG-rendering",
+      "AI-product-location",
+      "database-insertion",
+      "real-time-tracking"
+    ],
+    "navigation_graph": {
+      "total_nodes": 55,
+      "total_edges": 112,
+      "graph_type": "undirected weighted",
+      "all_nodes_reachable": true,
+      "min_node_degree": 2,
+      "max_node_degree": 6,
+      "avg_node_degree": 4.07,
+      "algorithms_supported": [
+        "A*",
+        "Dijkstra",
+        "BFS",
+        "DFS",
+        "Bellman-Ford"
+      ],
+      "edge_types": {
+        "horizontal-corridor": 30,
+        "vertical-corridor": 30,
+        "service-access": 3,
+        "shelf-access": 44,
+        "cashier-access": 5
+      }
+    }
+  },
+  "shelves": [
+    {
+      "id": "A1",
+      "name": "Electronics Cables",
+      "type": "shelf",
+      "category": "electronics",
+      "x": 10.29,
+      "y": 10.87,
+      "width": 12.94,
+      "height": 10.87,
+      "center_x": 16.76,
+      "center_y": 16.3
+    },
+    {
+      "id": "A2",
+      "name": "Chargers & Adapters",
+      "type": "shelf",
+      "category": "electronics",
+      "x": 10.29,
+      "y": 26.09,
+      "width": 12.94,
+      "height": 10.87,
+      "center_x": 16.76,
+      "center_y": 31.52
+    },
+    {
+      "id": "A3",
+      "name": "Audio Accessories",
+      "type": "shelf",
+      "category": "electronics",
+      "x": 10.29,
+      "y": 41.3,
+      "width": 12.94,
+      "height": 10.87,
+      "center_x": 16.76,
+      "center_y": 46.74
+    },
+    {
+      "id": "A4",
+      "name": "Smart Devices",
+      "type": "shelf",
+      "category": "electronics",
+      "x": 10.29,
+      "y": 56.52,
+      "width": 12.94,
+      "height": 10.87,
+      "center_x": 16.76,
+      "center_y": 61.96
+    },
+    {
+      "id": "B1",
+      "name": "Computer Peripherals",
+      "type": "shelf",
+      "category": "computer",
+      "x": 29.41,
+      "y": 10.87,
+      "width": 12.94,
+      "height": 10.87,
+      "center_x": 35.88,
+      "center_y": 16.3
+    },
+    {
+      "id": "B2",
+      "name": "Storage & Memory",
+      "type": "shelf",
+      "category": "computer",
+      "x": 29.41,
+      "y": 26.09,
+      "width": 12.94,
+      "height": 10.87,
+      "center_x": 35.88,
+      "center_y": 31.52
+    },
+    {
+      "id": "B3",
+      "name": "Networking Devices",
+      "type": "shelf",
+      "category": "computer",
+      "x": 29.41,
+      "y": 41.3,
+      "width": 12.94,
+      "height": 10.87,
+      "center_x": 35.88,
+      "center_y": 46.74
+    },
+    {
+      "id": "B4",
+      "name": "Laptop Accessories",
+      "type": "shelf",
+      "category": "computer",
+      "x": 29.41,
+      "y": 56.52,
+      "width": 12.94,
+      "height": 10.87,
+      "center_x": 35.88,
+      "center_y": 61.96
+    },
+    {
+      "id": "C1",
+      "name": "Office Printers",
+      "type": "shelf",
+      "category": "office",
+      "x": 48.53,
+      "y": 10.87,
+      "width": 12.94,
+      "height": 10.87,
+      "center_x": 55.0,
+      "center_y": 16.3
+    },
+    {
+      "id": "C2",
+      "name": "Stationery & Pens",
+      "type": "shelf",
+      "category": "office",
+      "x": 48.53,
+      "y": 26.09,
+      "width": 12.94,
+      "height": 10.87,
+      "center_x": 55.0,
+      "center_y": 31.52
+    },
+    {
+      "id": "C3",
+      "name": "Office Electronics",
+      "type": "shelf",
+      "category": "office",
+      "x": 48.53,
+      "y": 41.3,
+      "width": 12.94,
+      "height": 10.87,
+      "center_x": 55.0,
+      "center_y": 46.74
+    },
+    {
+      "id": "C4",
+      "name": "Calculators & Tools",
+      "type": "shelf",
+      "category": "office",
+      "x": 48.53,
+      "y": 56.52,
+      "width": 12.94,
+      "height": 10.87,
+      "center_x": 55.0,
+      "center_y": 61.96
+    },
+    {
+      "id": "D1",
+      "name": "Cables & Converters",
+      "type": "shelf",
+      "category": "electronics",
+      "x": 67.65,
+      "y": 10.87,
+      "width": 12.94,
+      "height": 10.87,
+      "center_x": 74.12,
+      "center_y": 16.3
+    },
+    {
+      "id": "D2",
+      "name": "Power Banks",
+      "type": "shelf",
+      "category": "electronics",
+      "x": 67.65,
+      "y": 26.09,
+      "width": 12.94,
+      "height": 10.87,
+      "center_x": 74.12,
+      "center_y": 31.52
+    },
+    {
+      "id": "D3",
+      "name": "Wearables & IoT",
+      "type": "shelf",
+      "category": "computer",
+      "x": 67.65,
+      "y": 41.3,
+      "width": 12.94,
+      "height": 10.87,
+      "center_x": 74.12,
+      "center_y": 46.74
+    },
+    {
+      "id": "D4",
+      "name": "Gaming Devices",
+      "type": "shelf",
+      "category": "computer",
+      "x": 67.65,
+      "y": 56.52,
+      "width": 12.94,
+      "height": 10.87,
+      "center_x": 74.12,
+      "center_y": 61.96
+    },
+    {
+      "id": "CS",
+      "name": "Customer Service",
+      "type": "service",
+      "category": "service",
+      "x": 77.94,
+      "y": 10.87,
+      "width": 17.65,
+      "height": 10.87,
+      "center_x": 86.76,
+      "center_y": 16.3
+    },
+    {
+      "id": "EN",
+      "name": "Entrance / Exit",
+      "type": "entrance",
+      "category": "entrance",
+      "x": 41.18,
+      "y": 91.3,
+      "width": 17.65,
+      "height": 5.65,
+      "center_x": 50.0,
+      "center_y": 94.13
+    },
+    {
+      "id": "CA1",
+      "name": "Cashier 1",
+      "type": "cashier",
+      "category": "cashier",
+      "x": 4.41,
+      "y": 91.3,
+      "width": 13.24,
+      "height": 5.65,
+      "center_x": 11.03,
+      "center_y": 94.13
+    },
+    {
+      "id": "CA2",
+      "name": "Cashier 2",
+      "type": "cashier",
+      "category": "cashier",
+      "x": 82.35,
+      "y": 91.3,
+      "width": 13.24,
+      "height": 5.65,
+      "center_x": 88.97,
+      "center_y": 94.13
+    }
+  ],
+  "aisles": [
+    {
+      "aisle_id": "A",
+      "label": "Aisle A — Electronics",
+      "x": 10.29,
+      "y": 6.96,
+      "width": 12.94,
+      "height": 63.04,
+      "shelves": [
+        "A1",
+        "A2",
+        "A3",
+        "A4"
+      ],
+      "category": "electronics"
+    },
+    {
+      "aisle_id": "B",
+      "label": "Aisle B — Computer",
+      "x": 29.41,
+      "y": 6.96,
+      "width": 12.94,
+      "height": 63.04,
+      "shelves": [
+        "B1",
+        "B2",
+        "B3",
+        "B4"
+      ],
+      "category": "computer"
+    },
+    {
+      "aisle_id": "C",
+      "label": "Aisle C — Office",
+      "x": 48.53,
+      "y": 6.96,
+      "width": 12.94,
+      "height": 63.04,
+      "shelves": [
+        "C1",
+        "C2",
+        "C3",
+        "C4"
+      ],
+      "category": "office"
+    },
+    {
+      "aisle_id": "D",
+      "label": "Aisle D — Mixed",
+      "x": 67.65,
+      "y": 6.96,
+      "width": 12.94,
+      "height": 63.04,
+      "shelves": [
+        "D1",
+        "D2",
+        "D3",
+        "D4"
+      ],
+      "category": "mixed"
+    }
+  ],
+  "corridors": [
+    {
+      "corridor_id": "COR-H-TOP",
+      "orientation": "horizontal",
+      "y": 6.96,
+      "x_start": 2.06,
+      "x_end": 97.94,
+      "width_units": 3.91,
+      "connects": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "CS"
+      ]
+    },
+    {
+      "corridor_id": "COR-H-R01",
+      "orientation": "horizontal",
+      "y": 23.91,
+      "x_start": 2.06,
+      "x_end": 77.65,
+      "width_units": 4.35,
+      "connects": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "corridor_id": "COR-H-R12",
+      "orientation": "horizontal",
+      "y": 39.13,
+      "x_start": 2.06,
+      "x_end": 77.65,
+      "width_units": 4.35,
+      "connects": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "corridor_id": "COR-H-R23",
+      "orientation": "horizontal",
+      "y": 54.35,
+      "x_start": 2.06,
+      "x_end": 77.65,
+      "width_units": 4.35,
+      "connects": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "corridor_id": "COR-H-BOT",
+      "orientation": "horizontal",
+      "y": 79.35,
+      "x_start": 2.06,
+      "x_end": 97.94,
+      "width_units": 11.96,
+      "connects": [
+        "cashier",
+        "entrance"
+      ]
+    },
+    {
+      "corridor_id": "COR-V-L",
+      "orientation": "vertical",
+      "x": 5.88,
+      "y_start": 3.04,
+      "y_end": 91.3,
+      "width_units": 4.41,
+      "connects": [
+        "A-left"
+      ]
+    },
+    {
+      "corridor_id": "COR-V-AB",
+      "orientation": "vertical",
+      "x": 26.32,
+      "y_start": 3.04,
+      "y_end": 91.3,
+      "width_units": 6.18,
+      "connects": [
+        "A-right",
+        "B-left"
+      ]
+    },
+    {
+      "corridor_id": "COR-V-BC",
+      "orientation": "vertical",
+      "x": 45.44,
+      "y_start": 3.04,
+      "y_end": 91.3,
+      "width_units": 6.18,
+      "connects": [
+        "B-right",
+        "C-left"
+      ]
+    },
+    {
+      "corridor_id": "COR-V-CD",
+      "orientation": "vertical",
+      "x": 64.56,
+      "y_start": 3.04,
+      "y_end": 91.3,
+      "width_units": 6.18,
+      "connects": [
+        "C-right",
+        "D-left"
+      ]
+    },
+    {
+      "corridor_id": "COR-V-DR",
+      "orientation": "vertical",
+      "x": 81.47,
+      "y_start": 3.04,
+      "y_end": 91.3,
+      "width_units": 4.71,
+      "connects": [
+        "D-right",
+        "CS"
+      ]
+    }
+  ],
+  "path_nodes": [
+    {
+      "node_id": "N001",
+      "x": 5.88,
+      "y": 6.96,
+      "walkable": true,
+      "label": "top-L"
+    },
+    {
+      "node_id": "N002",
+      "x": 26.32,
+      "y": 6.96,
+      "walkable": true,
+      "label": "top-AB"
+    },
+    {
+      "node_id": "N003",
+      "x": 45.44,
+      "y": 6.96,
+      "walkable": true,
+      "label": "top-BC"
+    },
+    {
+      "node_id": "N004",
+      "x": 64.56,
+      "y": 6.96,
+      "walkable": true,
+      "label": "top-CD"
+    },
+    {
+      "node_id": "N005",
+      "x": 81.47,
+      "y": 6.96,
+      "walkable": true,
+      "label": "top-DE"
+    },
+    {
+      "node_id": "N006",
+      "x": 50.0,
+      "y": 6.96,
+      "walkable": true,
+      "label": "top-EN"
+    },
+    {
+      "node_id": "N007",
+      "x": 5.88,
+      "y": 23.91,
+      "walkable": true,
+      "label": "r01-L"
+    },
+    {
+      "node_id": "N008",
+      "x": 26.32,
+      "y": 23.91,
+      "walkable": true,
+      "label": "r01-AB"
+    },
+    {
+      "node_id": "N009",
+      "x": 45.44,
+      "y": 23.91,
+      "walkable": true,
+      "label": "r01-BC"
+    },
+    {
+      "node_id": "N010",
+      "x": 64.56,
+      "y": 23.91,
+      "walkable": true,
+      "label": "r01-CD"
+    },
+    {
+      "node_id": "N011",
+      "x": 81.47,
+      "y": 23.91,
+      "walkable": true,
+      "label": "r01-DE"
+    },
+    {
+      "node_id": "N012",
+      "x": 50.0,
+      "y": 23.91,
+      "walkable": true,
+      "label": "r01-EN"
+    },
+    {
+      "node_id": "N013",
+      "x": 5.88,
+      "y": 39.13,
+      "walkable": true,
+      "label": "r12-L"
+    },
+    {
+      "node_id": "N014",
+      "x": 26.32,
+      "y": 39.13,
+      "walkable": true,
+      "label": "r12-AB"
+    },
+    {
+      "node_id": "N015",
+      "x": 45.44,
+      "y": 39.13,
+      "walkable": true,
+      "label": "r12-BC"
+    },
+    {
+      "node_id": "N016",
+      "x": 64.56,
+      "y": 39.13,
+      "walkable": true,
+      "label": "r12-CD"
+    },
+    {
+      "node_id": "N017",
+      "x": 81.47,
+      "y": 39.13,
+      "walkable": true,
+      "label": "r12-DE"
+    },
+    {
+      "node_id": "N018",
+      "x": 50.0,
+      "y": 39.13,
+      "walkable": true,
+      "label": "r12-EN"
+    },
+    {
+      "node_id": "N019",
+      "x": 5.88,
+      "y": 54.35,
+      "walkable": true,
+      "label": "r23-L"
+    },
+    {
+      "node_id": "N020",
+      "x": 26.32,
+      "y": 54.35,
+      "walkable": true,
+      "label": "r23-AB"
+    },
+    {
+      "node_id": "N021",
+      "x": 45.44,
+      "y": 54.35,
+      "walkable": true,
+      "label": "r23-BC"
+    },
+    {
+      "node_id": "N022",
+      "x": 64.56,
+      "y": 54.35,
+      "walkable": true,
+      "label": "r23-CD"
+    },
+    {
+      "node_id": "N023",
+      "x": 81.47,
+      "y": 54.35,
+      "walkable": true,
+      "label": "r23-DE"
+    },
+    {
+      "node_id": "N024",
+      "x": 50.0,
+      "y": 54.35,
+      "walkable": true,
+      "label": "r23-EN"
+    },
+    {
+      "node_id": "N025",
+      "x": 5.88,
+      "y": 79.35,
+      "walkable": true,
+      "label": "bot-L"
+    },
+    {
+      "node_id": "N026",
+      "x": 26.32,
+      "y": 79.35,
+      "walkable": true,
+      "label": "bot-AB"
+    },
+    {
+      "node_id": "N027",
+      "x": 45.44,
+      "y": 79.35,
+      "walkable": true,
+      "label": "bot-BC"
+    },
+    {
+      "node_id": "N028",
+      "x": 64.56,
+      "y": 79.35,
+      "walkable": true,
+      "label": "bot-CD"
+    },
+    {
+      "node_id": "N029",
+      "x": 81.47,
+      "y": 79.35,
+      "walkable": true,
+      "label": "bot-DE"
+    },
+    {
+      "node_id": "N030",
+      "x": 50.0,
+      "y": 79.35,
+      "walkable": true,
+      "label": "bot-EN"
+    },
+    {
+      "node_id": "N031",
+      "x": 5.88,
+      "y": 94.13,
+      "walkable": true,
+      "label": "csh-L"
+    },
+    {
+      "node_id": "N032",
+      "x": 26.32,
+      "y": 94.13,
+      "walkable": true,
+      "label": "csh-AB"
+    },
+    {
+      "node_id": "N033",
+      "x": 45.44,
+      "y": 94.13,
+      "walkable": true,
+      "label": "csh-BC"
+    },
+    {
+      "node_id": "N034",
+      "x": 64.56,
+      "y": 94.13,
+      "walkable": true,
+      "label": "csh-CD"
+    },
+    {
+      "node_id": "N035",
+      "x": 81.47,
+      "y": 94.13,
+      "walkable": true,
+      "label": "csh-DE"
+    },
+    {
+      "node_id": "N036",
+      "x": 50.0,
+      "y": 94.13,
+      "walkable": true,
+      "label": "csh-EN"
+    },
+    {
+      "node_id": "N037",
+      "x": 16.76,
+      "y": 23.48,
+      "walkable": true,
+      "label": "approach-A1"
+    },
+    {
+      "node_id": "N038",
+      "x": 16.76,
+      "y": 38.7,
+      "walkable": true,
+      "label": "approach-A2"
+    },
+    {
+      "node_id": "N039",
+      "x": 16.76,
+      "y": 53.91,
+      "walkable": true,
+      "label": "approach-A3"
+    },
+    {
+      "node_id": "N040",
+      "x": 16.76,
+      "y": 69.13,
+      "walkable": true,
+      "label": "approach-A4"
+    },
+    {
+      "node_id": "N041",
+      "x": 35.88,
+      "y": 23.48,
+      "walkable": true,
+      "label": "approach-B1"
+    },
+    {
+      "node_id": "N042",
+      "x": 35.88,
+      "y": 38.7,
+      "walkable": true,
+      "label": "approach-B2"
+    },
+    {
+      "node_id": "N043",
+      "x": 35.88,
+      "y": 53.91,
+      "walkable": true,
+      "label": "approach-B3"
+    },
+    {
+      "node_id": "N044",
+      "x": 35.88,
+      "y": 69.13,
+      "walkable": true,
+      "label": "approach-B4"
+    },
+    {
+      "node_id": "N045",
+      "x": 55.0,
+      "y": 23.48,
+      "walkable": true,
+      "label": "approach-C1"
+    },
+    {
+      "node_id": "N046",
+      "x": 55.0,
+      "y": 38.7,
+      "walkable": true,
+      "label": "approach-C2"
+    },
+    {
+      "node_id": "N047",
+      "x": 55.0,
+      "y": 53.91,
+      "walkable": true,
+      "label": "approach-C3"
+    },
+    {
+      "node_id": "N048",
+      "x": 55.0,
+      "y": 69.13,
+      "walkable": true,
+      "label": "approach-C4"
+    },
+    {
+      "node_id": "N049",
+      "x": 74.12,
+      "y": 23.48,
+      "walkable": true,
+      "label": "approach-D1"
+    },
+    {
+      "node_id": "N050",
+      "x": 74.12,
+      "y": 38.7,
+      "walkable": true,
+      "label": "approach-D2"
+    },
+    {
+      "node_id": "N051",
+      "x": 74.12,
+      "y": 53.91,
+      "walkable": true,
+      "label": "approach-D3"
+    },
+    {
+      "node_id": "N052",
+      "x": 74.12,
+      "y": 69.13,
+      "walkable": true,
+      "label": "approach-D4"
+    },
+    {
+      "node_id": "N053",
+      "x": 11.03,
+      "y": 94.13,
+      "walkable": true,
+      "label": "cashier-1"
+    },
+    {
+      "node_id": "N054",
+      "x": 88.97,
+      "y": 94.13,
+      "walkable": true,
+      "label": "cashier-2"
+    },
+    {
+      "node_id": "N055",
+      "x": 86.76,
+      "y": 16.3,
+      "walkable": true,
+      "label": "customer-service"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E001",
+      "from": "N001",
+      "to": "N002",
+      "distance": 20.44,
+      "bidirectional": true,
+      "type": "horizontal-corridor"
+    },
+    {
+      "edge_id": "E002",
+      "from": "N001",
+      "to": "N007",
+      "distance": 16.95,
+      "bidirectional": true,
+      "type": "vertical-corridor"
+    },
+    {
+      "edge_id": "E003",
+      "from": "N002",
+      "to": "N003",
+      "distance": 19.12,
+      "bidirectional": true,
+      "type": "horizontal-corridor"
+    },
+    {
+      "edge_id": "E004",
+      "from": "N002",
+      "to": "N008",
+      "distance": 16.95,
+      "bidirectional": true,
+      "type": "vertical-corridor"
+    },
+    {
+      "edge_id": "E005",
+      "from": "N003",
+      "to": "N006",
+      "distance": 4.56,
+      "bidirectional": true,
+      "type": "horizontal-corridor"
+    },
+    {
+      "edge_id": "E006",
+      "from": "N003",
+      "to": "N009",
+      "distance": 16.95,
+      "bidirectional": true,
+      "type": "vertical-corridor"
+    },
+    {
+      "edge_id": "E007",
+      "from": "N004",
+      "to": "N005",
+      "distance": 16.91,
+      "bidirectional": true,
+      "type": "horizontal-corridor"
+    },
+    {
+      "edge_id": "E008",
+      "from": "N004",
+      "to": "N006",
+      "distance": 14.56,
+      "bidirectional": true,
+      "type": "horizontal-corridor"
+    },
+    {
+      "edge_id": "E009",
+      "from": "N004",
+      "to": "N010",
+      "distance": 16.95,
+      "bidirectional": true,
+      "type": "vertical-corridor"
+    },
+    {
+      "edge_id": "E010",
+      "from": "N004",
+      "to": "N055",
+      "distance": 24.085,
+      "bidirectional": true,
+      "type": "service-access"
+    },
+    {
+      "edge_id": "E011",
+      "from": "N005",
+      "to": "N011",
+      "distance": 16.95,
+      "bidirectional": true,
+      "type": "vertical-corridor"
+    },
+    {
+      "edge_id": "E012",
+      "from": "N005",
+      "to": "N055",
+      "distance": 10.734,
+      "bidirectional": true,
+      "type": "service-access"
+    },
+    {
+      "edge_id": "E013",
+      "from": "N006",
+      "to": "N012",
+      "distance": 16.95,
+      "bidirectional": true,
+      "type": "vertical-corridor"
+    },
+    {
+      "edge_id": "E014",
+      "from": "N007",
+      "to": "N008",
+      "distance": 20.44,
+      "bidirectional": true,
+      "type": "horizontal-corridor"
+    },
+    {
+      "edge_id": "E015",
+      "from": "N007",
+      "to": "N013",
+      "distance": 15.22,
+      "bidirectional": true,
+      "type": "vertical-corridor"
+    },
+    {
+      "edge_id": "E016",
+      "from": "N007",
+      "to": "N037",
+      "distance": 10.888,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E017",
+      "from": "N008",
+      "to": "N009",
+      "distance": 19.12,
+      "bidirectional": true,
+      "type": "horizontal-corridor"
+    },
+    {
+      "edge_id": "E018",
+      "from": "N008",
+      "to": "N014",
+      "distance": 15.22,
+      "bidirectional": true,
+      "type": "vertical-corridor"
+    },
+    {
+      "edge_id": "E019",
+      "from": "N008",
+      "to": "N037",
+      "distance": 9.57,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E020",
+      "from": "N008",
+      "to": "N041",
+      "distance": 9.57,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E021",
+      "from": "N009",
+      "to": "N012",
+      "distance": 4.56,
+      "bidirectional": true,
+      "type": "horizontal-corridor"
+    },
+    {
+      "edge_id": "E022",
+      "from": "N009",
+      "to": "N015",
+      "distance": 15.22,
+      "bidirectional": true,
+      "type": "vertical-corridor"
+    },
+    {
+      "edge_id": "E023",
+      "from": "N009",
+      "to": "N041",
+      "distance": 9.57,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E024",
+      "from": "N010",
+      "to": "N011",
+      "distance": 16.91,
+      "bidirectional": true,
+      "type": "horizontal-corridor"
+    },
+    {
+      "edge_id": "E025",
+      "from": "N010",
+      "to": "N012",
+      "distance": 14.56,
+      "bidirectional": true,
+      "type": "horizontal-corridor"
+    },
+    {
+      "edge_id": "E026",
+      "from": "N010",
+      "to": "N016",
+      "distance": 15.22,
+      "bidirectional": true,
+      "type": "vertical-corridor"
+    },
+    {
+      "edge_id": "E027",
+      "from": "N010",
+      "to": "N045",
+      "distance": 9.57,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E028",
+      "from": "N010",
+      "to": "N049",
+      "distance": 9.57,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E029",
+      "from": "N011",
+      "to": "N017",
+      "distance": 15.22,
+      "bidirectional": true,
+      "type": "vertical-corridor"
+    },
+    {
+      "edge_id": "E030",
+      "from": "N011",
+      "to": "N049",
+      "distance": 7.363,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E031",
+      "from": "N011",
+      "to": "N055",
+      "distance": 9.268,
+      "bidirectional": true,
+      "type": "service-access"
+    },
+    {
+      "edge_id": "E032",
+      "from": "N012",
+      "to": "N018",
+      "distance": 15.22,
+      "bidirectional": true,
+      "type": "vertical-corridor"
+    },
+    {
+      "edge_id": "E033",
+      "from": "N012",
+      "to": "N045",
+      "distance": 5.018,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E034",
+      "from": "N013",
+      "to": "N014",
+      "distance": 20.44,
+      "bidirectional": true,
+      "type": "horizontal-corridor"
+    },
+    {
+      "edge_id": "E035",
+      "from": "N013",
+      "to": "N019",
+      "distance": 15.22,
+      "bidirectional": true,
+      "type": "vertical-corridor"
+    },
+    {
+      "edge_id": "E036",
+      "from": "N013",
+      "to": "N038",
+      "distance": 10.888,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E037",
+      "from": "N014",
+      "to": "N015",
+      "distance": 19.12,
+      "bidirectional": true,
+      "type": "horizontal-corridor"
+    },
+    {
+      "edge_id": "E038",
+      "from": "N014",
+      "to": "N020",
+      "distance": 15.22,
+      "bidirectional": true,
+      "type": "vertical-corridor"
+    },
+    {
+      "edge_id": "E039",
+      "from": "N014",
+      "to": "N038",
+      "distance": 9.57,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E040",
+      "from": "N014",
+      "to": "N042",
+      "distance": 9.57,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E041",
+      "from": "N015",
+      "to": "N018",
+      "distance": 4.56,
+      "bidirectional": true,
+      "type": "horizontal-corridor"
+    },
+    {
+      "edge_id": "E042",
+      "from": "N015",
+      "to": "N021",
+      "distance": 15.22,
+      "bidirectional": true,
+      "type": "vertical-corridor"
+    },
+    {
+      "edge_id": "E043",
+      "from": "N015",
+      "to": "N042",
+      "distance": 9.57,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E044",
+      "from": "N016",
+      "to": "N017",
+      "distance": 16.91,
+      "bidirectional": true,
+      "type": "horizontal-corridor"
+    },
+    {
+      "edge_id": "E045",
+      "from": "N016",
+      "to": "N018",
+      "distance": 14.56,
+      "bidirectional": true,
+      "type": "horizontal-corridor"
+    },
+    {
+      "edge_id": "E046",
+      "from": "N016",
+      "to": "N022",
+      "distance": 15.22,
+      "bidirectional": true,
+      "type": "vertical-corridor"
+    },
+    {
+      "edge_id": "E047",
+      "from": "N016",
+      "to": "N046",
+      "distance": 9.57,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E048",
+      "from": "N016",
+      "to": "N050",
+      "distance": 9.57,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E049",
+      "from": "N017",
+      "to": "N023",
+      "distance": 15.22,
+      "bidirectional": true,
+      "type": "vertical-corridor"
+    },
+    {
+      "edge_id": "E050",
+      "from": "N017",
+      "to": "N050",
+      "distance": 7.363,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E051",
+      "from": "N018",
+      "to": "N024",
+      "distance": 15.22,
+      "bidirectional": true,
+      "type": "vertical-corridor"
+    },
+    {
+      "edge_id": "E052",
+      "from": "N018",
+      "to": "N046",
+      "distance": 5.018,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E053",
+      "from": "N019",
+      "to": "N020",
+      "distance": 20.44,
+      "bidirectional": true,
+      "type": "horizontal-corridor"
+    },
+    {
+      "edge_id": "E054",
+      "from": "N019",
+      "to": "N025",
+      "distance": 25.0,
+      "bidirectional": true,
+      "type": "vertical-corridor"
+    },
+    {
+      "edge_id": "E055",
+      "from": "N019",
+      "to": "N039",
+      "distance": 10.889,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E056",
+      "from": "N020",
+      "to": "N021",
+      "distance": 19.12,
+      "bidirectional": true,
+      "type": "horizontal-corridor"
+    },
+    {
+      "edge_id": "E057",
+      "from": "N020",
+      "to": "N026",
+      "distance": 25.0,
+      "bidirectional": true,
+      "type": "vertical-corridor"
+    },
+    {
+      "edge_id": "E058",
+      "from": "N020",
+      "to": "N039",
+      "distance": 9.57,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E059",
+      "from": "N020",
+      "to": "N043",
+      "distance": 9.57,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E060",
+      "from": "N021",
+      "to": "N024",
+      "distance": 4.56,
+      "bidirectional": true,
+      "type": "horizontal-corridor"
+    },
+    {
+      "edge_id": "E061",
+      "from": "N021",
+      "to": "N027",
+      "distance": 25.0,
+      "bidirectional": true,
+      "type": "vertical-corridor"
+    },
+    {
+      "edge_id": "E062",
+      "from": "N021",
+      "to": "N043",
+      "distance": 9.57,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E063",
+      "from": "N022",
+      "to": "N023",
+      "distance": 16.91,
+      "bidirectional": true,
+      "type": "horizontal-corridor"
+    },
+    {
+      "edge_id": "E064",
+      "from": "N022",
+      "to": "N024",
+      "distance": 14.56,
+      "bidirectional": true,
+      "type": "horizontal-corridor"
+    },
+    {
+      "edge_id": "E065",
+      "from": "N022",
+      "to": "N028",
+      "distance": 25.0,
+      "bidirectional": true,
+      "type": "vertical-corridor"
+    },
+    {
+      "edge_id": "E066",
+      "from": "N022",
+      "to": "N047",
+      "distance": 9.57,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E067",
+      "from": "N022",
+      "to": "N051",
+      "distance": 9.57,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E068",
+      "from": "N023",
+      "to": "N029",
+      "distance": 25.0,
+      "bidirectional": true,
+      "type": "vertical-corridor"
+    },
+    {
+      "edge_id": "E069",
+      "from": "N023",
+      "to": "N051",
+      "distance": 7.363,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E070",
+      "from": "N024",
+      "to": "N030",
+      "distance": 25.0,
+      "bidirectional": true,
+      "type": "vertical-corridor"
+    },
+    {
+      "edge_id": "E071",
+      "from": "N024",
+      "to": "N047",
+      "distance": 5.019,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E072",
+      "from": "N025",
+      "to": "N026",
+      "distance": 20.44,
+      "bidirectional": true,
+      "type": "horizontal-corridor"
+    },
+    {
+      "edge_id": "E073",
+      "from": "N025",
+      "to": "N031",
+      "distance": 14.78,
+      "bidirectional": true,
+      "type": "vertical-corridor"
+    },
+    {
+      "edge_id": "E074",
+      "from": "N025",
+      "to": "N040",
+      "distance": 14.927,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E075",
+      "from": "N026",
+      "to": "N027",
+      "distance": 19.12,
+      "bidirectional": true,
+      "type": "horizontal-corridor"
+    },
+    {
+      "edge_id": "E076",
+      "from": "N026",
+      "to": "N032",
+      "distance": 14.78,
+      "bidirectional": true,
+      "type": "vertical-corridor"
+    },
+    {
+      "edge_id": "E077",
+      "from": "N026",
+      "to": "N040",
+      "distance": 13.994,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E078",
+      "from": "N026",
+      "to": "N044",
+      "distance": 13.994,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E079",
+      "from": "N027",
+      "to": "N030",
+      "distance": 4.56,
+      "bidirectional": true,
+      "type": "horizontal-corridor"
+    },
+    {
+      "edge_id": "E080",
+      "from": "N027",
+      "to": "N033",
+      "distance": 14.78,
+      "bidirectional": true,
+      "type": "vertical-corridor"
+    },
+    {
+      "edge_id": "E081",
+      "from": "N027",
+      "to": "N044",
+      "distance": 13.994,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E082",
+      "from": "N028",
+      "to": "N029",
+      "distance": 16.91,
+      "bidirectional": true,
+      "type": "horizontal-corridor"
+    },
+    {
+      "edge_id": "E083",
+      "from": "N028",
+      "to": "N030",
+      "distance": 14.56,
+      "bidirectional": true,
+      "type": "horizontal-corridor"
+    },
+    {
+      "edge_id": "E084",
+      "from": "N028",
+      "to": "N034",
+      "distance": 14.78,
+      "bidirectional": true,
+      "type": "vertical-corridor"
+    },
+    {
+      "edge_id": "E085",
+      "from": "N028",
+      "to": "N048",
+      "distance": 13.994,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E086",
+      "from": "N028",
+      "to": "N052",
+      "distance": 13.994,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E087",
+      "from": "N029",
+      "to": "N035",
+      "distance": 14.78,
+      "bidirectional": true,
+      "type": "vertical-corridor"
+    },
+    {
+      "edge_id": "E088",
+      "from": "N029",
+      "to": "N052",
+      "distance": 12.589,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E089",
+      "from": "N030",
+      "to": "N036",
+      "distance": 14.78,
+      "bidirectional": true,
+      "type": "vertical-corridor"
+    },
+    {
+      "edge_id": "E090",
+      "from": "N030",
+      "to": "N048",
+      "distance": 11.378,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E091",
+      "from": "N031",
+      "to": "N032",
+      "distance": 20.44,
+      "bidirectional": true,
+      "type": "horizontal-corridor"
+    },
+    {
+      "edge_id": "E092",
+      "from": "N031",
+      "to": "N053",
+      "distance": 5.15,
+      "bidirectional": true,
+      "type": "cashier-access"
+    },
+    {
+      "edge_id": "E093",
+      "from": "N032",
+      "to": "N033",
+      "distance": 19.12,
+      "bidirectional": true,
+      "type": "horizontal-corridor"
+    },
+    {
+      "edge_id": "E094",
+      "from": "N032",
+      "to": "N053",
+      "distance": 15.29,
+      "bidirectional": true,
+      "type": "cashier-access"
+    },
+    {
+      "edge_id": "E095",
+      "from": "N033",
+      "to": "N036",
+      "distance": 4.56,
+      "bidirectional": true,
+      "type": "horizontal-corridor"
+    },
+    {
+      "edge_id": "E096",
+      "from": "N034",
+      "to": "N035",
+      "distance": 16.91,
+      "bidirectional": true,
+      "type": "horizontal-corridor"
+    },
+    {
+      "edge_id": "E097",
+      "from": "N034",
+      "to": "N036",
+      "distance": 14.56,
+      "bidirectional": true,
+      "type": "horizontal-corridor"
+    },
+    {
+      "edge_id": "E098",
+      "from": "N034",
+      "to": "N054",
+      "distance": 24.41,
+      "bidirectional": true,
+      "type": "cashier-access"
+    },
+    {
+      "edge_id": "E099",
+      "from": "N035",
+      "to": "N054",
+      "distance": 7.5,
+      "bidirectional": true,
+      "type": "cashier-access"
+    },
+    {
+      "edge_id": "E100",
+      "from": "N037",
+      "to": "N038",
+      "distance": 15.22,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E101",
+      "from": "N038",
+      "to": "N039",
+      "distance": 15.21,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E102",
+      "from": "N039",
+      "to": "N040",
+      "distance": 15.22,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E103",
+      "from": "N041",
+      "to": "N042",
+      "distance": 15.22,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E104",
+      "from": "N042",
+      "to": "N043",
+      "distance": 15.21,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E105",
+      "from": "N043",
+      "to": "N044",
+      "distance": 15.22,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E106",
+      "from": "N045",
+      "to": "N046",
+      "distance": 15.22,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E107",
+      "from": "N046",
+      "to": "N047",
+      "distance": 15.21,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E108",
+      "from": "N047",
+      "to": "N048",
+      "distance": 15.22,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E109",
+      "from": "N049",
+      "to": "N050",
+      "distance": 15.22,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E110",
+      "from": "N050",
+      "to": "N051",
+      "distance": 15.21,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E111",
+      "from": "N051",
+      "to": "N052",
+      "distance": 15.22,
+      "bidirectional": true,
+      "type": "shelf-access"
+    },
+    {
+      "edge_id": "E112",
+      "from": "N053",
+      "to": "N054",
+      "distance": 77.94,
+      "bidirectional": true,
+      "type": "cashier-access"
+    }
+  ],
+  "example_routes": [
+    {
+      "route_id": "ROUTE-EN-A1",
+      "from_node": "N036",
+      "from_label": "Entrance / Exit",
+      "to_node": "N037",
+      "to_label": "approach-A1",
+      "shelf_id": "A1",
+      "total_distance": 98.104,
+      "hop_count": 8,
+      "path": [
+        "N036",
+        "N030",
+        "N027",
+        "N026",
+        "N040",
+        "N039",
+        "N038",
+        "N037"
+      ]
+    },
+    {
+      "route_id": "ROUTE-EN-A2",
+      "from_node": "N036",
+      "from_label": "Entrance / Exit",
+      "to_node": "N038",
+      "to_label": "approach-A2",
+      "shelf_id": "A2",
+      "total_distance": 82.884,
+      "hop_count": 7,
+      "path": [
+        "N036",
+        "N033",
+        "N027",
+        "N026",
+        "N040",
+        "N039",
+        "N038"
+      ]
+    },
+    {
+      "route_id": "ROUTE-EN-A3",
+      "from_node": "N036",
+      "from_label": "Entrance / Exit",
+      "to_node": "N039",
+      "to_label": "approach-A3",
+      "shelf_id": "A3",
+      "total_distance": 67.674,
+      "hop_count": 6,
+      "path": [
+        "N036",
+        "N033",
+        "N027",
+        "N026",
+        "N040",
+        "N039"
+      ]
+    },
+    {
+      "route_id": "ROUTE-EN-A4",
+      "from_node": "N036",
+      "from_label": "Entrance / Exit",
+      "to_node": "N040",
+      "to_label": "approach-A4",
+      "shelf_id": "A4",
+      "total_distance": 52.454,
+      "hop_count": 5,
+      "path": [
+        "N036",
+        "N033",
+        "N027",
+        "N026",
+        "N040"
+      ]
+    },
+    {
+      "route_id": "ROUTE-EN-B1",
+      "from_node": "N036",
+      "from_label": "Entrance / Exit",
+      "to_node": "N041",
+      "to_label": "approach-B1",
+      "shelf_id": "B1",
+      "total_distance": 78.984,
+      "hop_count": 7,
+      "path": [
+        "N036",
+        "N030",
+        "N027",
+        "N044",
+        "N043",
+        "N042",
+        "N041"
+      ]
+    },
+    {
+      "route_id": "ROUTE-EN-B2",
+      "from_node": "N036",
+      "from_label": "Entrance / Exit",
+      "to_node": "N042",
+      "to_label": "approach-B2",
+      "shelf_id": "B2",
+      "total_distance": 63.764,
+      "hop_count": 6,
+      "path": [
+        "N036",
+        "N030",
+        "N027",
+        "N044",
+        "N043",
+        "N042"
+      ]
+    },
+    {
+      "route_id": "ROUTE-EN-B3",
+      "from_node": "N036",
+      "from_label": "Entrance / Exit",
+      "to_node": "N043",
+      "to_label": "approach-B3",
+      "shelf_id": "B3",
+      "total_distance": 48.554,
+      "hop_count": 5,
+      "path": [
+        "N036",
+        "N030",
+        "N027",
+        "N044",
+        "N043"
+      ]
+    },
+    {
+      "route_id": "ROUTE-EN-B4",
+      "from_node": "N036",
+      "from_label": "Entrance / Exit",
+      "to_node": "N044",
+      "to_label": "approach-B4",
+      "shelf_id": "B4",
+      "total_distance": 33.334,
+      "hop_count": 4,
+      "path": [
+        "N036",
+        "N033",
+        "N027",
+        "N044"
+      ]
+    },
+    {
+      "route_id": "ROUTE-EN-C1",
+      "from_node": "N036",
+      "from_label": "Entrance / Exit",
+      "to_node": "N045",
+      "to_label": "approach-C1",
+      "shelf_id": "C1",
+      "total_distance": 71.808,
+      "hop_count": 6,
+      "path": [
+        "N036",
+        "N030",
+        "N048",
+        "N047",
+        "N046",
+        "N045"
+      ]
+    },
+    {
+      "route_id": "ROUTE-EN-C2",
+      "from_node": "N036",
+      "from_label": "Entrance / Exit",
+      "to_node": "N046",
+      "to_label": "approach-C2",
+      "shelf_id": "C2",
+      "total_distance": 56.588,
+      "hop_count": 5,
+      "path": [
+        "N036",
+        "N030",
+        "N048",
+        "N047",
+        "N046"
+      ]
+    },
+    {
+      "route_id": "ROUTE-EN-C3",
+      "from_node": "N036",
+      "from_label": "Entrance / Exit",
+      "to_node": "N047",
+      "to_label": "approach-C3",
+      "shelf_id": "C3",
+      "total_distance": 41.378,
+      "hop_count": 4,
+      "path": [
+        "N036",
+        "N030",
+        "N048",
+        "N047"
+      ]
+    },
+    {
+      "route_id": "ROUTE-EN-C4",
+      "from_node": "N036",
+      "from_label": "Entrance / Exit",
+      "to_node": "N048",
+      "to_label": "approach-C4",
+      "shelf_id": "C4",
+      "total_distance": 26.158,
+      "hop_count": 3,
+      "path": [
+        "N036",
+        "N030",
+        "N048"
+      ]
+    },
+    {
+      "route_id": "ROUTE-EN-D1",
+      "from_node": "N036",
+      "from_label": "Entrance / Exit",
+      "to_node": "N049",
+      "to_label": "approach-D1",
+      "shelf_id": "D1",
+      "total_distance": 88.984,
+      "hop_count": 7,
+      "path": [
+        "N036",
+        "N030",
+        "N028",
+        "N052",
+        "N051",
+        "N050",
+        "N049"
+      ]
+    },
+    {
+      "route_id": "ROUTE-EN-D2",
+      "from_node": "N036",
+      "from_label": "Entrance / Exit",
+      "to_node": "N050",
+      "to_label": "approach-D2",
+      "shelf_id": "D2",
+      "total_distance": 73.764,
+      "hop_count": 6,
+      "path": [
+        "N036",
+        "N030",
+        "N028",
+        "N052",
+        "N051",
+        "N050"
+      ]
+    },
+    {
+      "route_id": "ROUTE-EN-D3",
+      "from_node": "N036",
+      "from_label": "Entrance / Exit",
+      "to_node": "N051",
+      "to_label": "approach-D3",
+      "shelf_id": "D3",
+      "total_distance": 58.554,
+      "hop_count": 5,
+      "path": [
+        "N036",
+        "N030",
+        "N028",
+        "N052",
+        "N051"
+      ]
+    },
+    {
+      "route_id": "ROUTE-EN-D4",
+      "from_node": "N036",
+      "from_label": "Entrance / Exit",
+      "to_node": "N052",
+      "to_label": "approach-D4",
+      "shelf_id": "D4",
+      "total_distance": 43.334,
+      "hop_count": 4,
+      "path": [
+        "N036",
+        "N030",
+        "N028",
+        "N052"
+      ]
+    }
+  ]
+}
