@@ -142,6 +142,7 @@ cost, path = dijkstra(graph, "N036", "N039")
 
 ### `amazon.xlsx`
 Raw product data scraped from Amazon India.
+Data from https://www.kaggle.com/code/mehakiftikhar/amazon-sales-dataset-eda/input
 
 | Field | Description |
 |-------|-------------|
