@@ -7,6 +7,7 @@
 ## ✦ Demo
 
 ```
+
 User types: "wireless bluetooth earphones"
      ↓
 AI matches: "boAt Rockerz 255 Pro+ Bluetooth Wireless..."
