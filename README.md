@@ -17,11 +17,15 @@ Dijkstra calculates: N036 → N030 → N027 → N026 → N039 (7 hops, 82.9 unit
      ↓
 Map renders: Glowing route from Entrance to Shelf A3
 ```
-![bluetooth speaker search](assets/screenshot-bluetooth.png)
-![power bank navigation](assets/screenshot-powerbank.png)
-![calculator search](assets/screenshot-calculator.png)
-![smartwatch tracker](assets/screenshot-smartwatch.png)
+## 📸 Screenshots
 
+| Bluetooth Speaker | Power Bank |
+|:-----------------:|:----------:|
+| ![](bluetooth%20speaker%20searc....png) | ![](power%20bank%20navigation....png) |
+
+| Scientific Calculator | Smartwatch Tracker |
+|:--------------------:|:-----------------:|
+| ![](calculator%20search.png) | ![](smartwatch%20tracker.png) |
 <br>
 
 ## 📁 Repository Files
