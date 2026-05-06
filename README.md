@@ -245,38 +245,6 @@ One JSON object per line — direct input to FAISS indexing.
 
 <br>
 
-## 🚀 Quick Start
-
-### 1. Clone the repo
-
-```bash
-git clone https://github.com/your-username/smart-store-navigation.git
-cd smart-store-navigation
-```
-
-### 2. Install dependencies
-
-```bash
-pip install streamlit sentence-transformers faiss-cpu numpy pandas openpyxl
-```
-
-### 3. Run the app
-
-```bash
-streamlit run app.py
-```
-
-Open [http://localhost:8501](http://localhost:8501) in your browser.
-
-### 4. Search for a product
-
-Type any product query in the search box:
-- `"wireless mouse logitech"`
-- `"iphone charger usb-c"`
-- `"noise cancelling headphones"`
-- `"gaming keyboard rgb"`
-- `"power bank 20000mah"`
-
 The system will match the product, identify its shelf, and render the shortest walking route on the store map.
 
 <br>
@@ -311,34 +279,32 @@ The system will match the product, identify its shelf, and render the shortest w
 
 <br>
 
-## 📂 Project Structure
+## 🔬 Improvements
 
-```
-smart-store-navigation/
-│
-├── app.py                        # Streamlit app (main entry point)
-├── SmartStore.ipynb              # Data pipeline & ML prototype notebook
-│
-├── amazon.xlsx                   # Raw Amazon dataset (1,465 products)
-├── embeddings_ready.jsonl        # Text-prepared records for embedding
-├── search_text_pipeline.json     # Cleaned search_text for all products
-│
-├── product_shelf_mapping.json    # Product → Shelf assignments
-├── products_faiss.index          # Pre-built FAISS vector index
-│
-└── store_layout_navigation.json  # Store graph (nodes, edges, routes)
+### Search Quality
+
+The current model `all-MiniLM-L6-v2` is English-only. Switching to a multilingual model adds Arabic support with no other changes required:
+
+```python
+# In SmartStore.ipynb and app.py
+model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
 ```
 
-<br>
+After changing the model, re-run the notebook to regenerate `products_faiss.index`.
 
-## 🗺️ Roadmap
+### Model Comparison
 
-- [ ] Arabic language search support (multilingual embeddings)
-- [ ] Real-time shelf occupancy / stock status
-- [ ] Multi-stop route planning ("find me milk AND coffee")
-- [ ] Mobile-responsive UI
-- [ ] A* algorithm upgrade for large-scale stores
-- [ ] Admin panel for shelf reassignment
+| Model | Size | Languages | Accuracy |
+|-------|------|-----------|----------|
+| `all-MiniLM-L6-v2` *(current)* | 80MB | English only | baseline |
+| `paraphrase-multilingual-MiniLM-L12-v2` *(recommended)* | 420MB | 50+ languages | +15% |
+| `paraphrase-multilingual-mpnet-base-v2` | 1.1GB | 50+ languages | +25% |
+
+### Known Limitations
+
+- 33% of products have a shelf confidence score below 0.85 — shelf assignment may occasionally be incorrect
+- `IndexFlatL2` searches all vectors sequentially — sufficient for 1,351 products but will slow down beyond 50,000+
+- Search text averages 336 characters which can exceed the model's token limit for some products
 
 <br>
 
